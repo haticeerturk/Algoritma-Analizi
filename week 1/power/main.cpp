@@ -1,3 +1,5 @@
+// function a^b results.
+
 #include <iostream>
 
 using namespace std;
