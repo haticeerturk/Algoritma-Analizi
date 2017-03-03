@@ -2,8 +2,12 @@
 
 using namespace std;
 
+int kacAdim = 0;
+
 long pow(int a, int b)
 {
+    kacAdim += 1;
+    
     if(b == 0){
         return 1;
     }
@@ -24,5 +28,6 @@ int main()
 {
     long sonuc = pow(3,10);
     cout << sonuc;
+    cout << kacAdim;
     return 0;
 }
