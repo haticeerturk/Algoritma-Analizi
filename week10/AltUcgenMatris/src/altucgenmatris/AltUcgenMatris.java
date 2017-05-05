@@ -16,7 +16,7 @@ public class AltUcgenMatris {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        double m[][] = new double[][]{{1,2,3},{0,4,5},{0,0,6}};
+        int m[][] = new int[][]{{1,2,3},{0,4,5},{0,0,6}};
         double sonuc[][] = new double[][]{{30},{30},{30}};
         
         System.out.println("Alt Üçgen Matris: ");
@@ -29,7 +29,7 @@ public class AltUcgenMatris {
         carpilanMatrisiBul(m, sonuc);
     }
     
-    public static void carpilanMatrisiBul(double[][] m, double[][] sonuc){
+    public static void carpilanMatrisiBul(int[][] m, double[][] sonuc){
         System.out.println("det: "+determinant(m));
         int det = determinant(m);
         System.out.println("iki: "+(m[0][2]*m[2][1]-m[0][1]*m[2][2])/det);
